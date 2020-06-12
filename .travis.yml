@@ -1,0 +1,15 @@
+language: bash
+
+addons:
+  apt:
+    update: true
+
+services:
+  - docker
+
+install:
+  - docker build --tag nginx-proxy .
+  - docker run --detach --publish 80:80 --name nginx-proxy nginx-proxy
+
+script:
+  - docker exec nginx-proxy nginx -t
