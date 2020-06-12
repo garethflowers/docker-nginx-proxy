@@ -9,7 +9,7 @@ services:
 
 install:
   - mkdir -p ssl
-  - openssl req -x509 -keyout ./ssl/default.key -out ./ssl/default.crt -subj '/CN=localhost'
+  - openssl req -x509 -nodes -keyout ./ssl/default.key -out ./ssl/default.crt -subj '/CN=localhost'
   - docker build --tag nginx-proxy .
   - docker run --detach --publish 80:80 --name nginx-proxy --volume ./ssl:/opt/ssl:ro nginx-proxy
   - sleep 10
