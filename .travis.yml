@@ -10,6 +10,7 @@ services:
 install:
   - docker build --tag nginx-proxy .
   - docker run --detach --publish 80:80 --name nginx-proxy nginx-proxy
+  - sleep 10
 
 script:
   - docker exec nginx-proxy nginx -t
