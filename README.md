@@ -1,6 +1,6 @@
 [![Build Status][I1]][1] [![Image Layers][I2]][2] [![Docker Pulls][I3]][3]
 
-# PostgreSQL Server with PL/Perl
+# Nginx Reverse Proxy
 
 Docker based Nginx instance configured for use as a Reverse Proxy.
 
