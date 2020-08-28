@@ -1,19 +1,11 @@
 FROM nginx:1.18.0-alpine
 
-ARG BUILD_DATE
-ARG VERSION
-ARG VCS_REF
-
-LABEL org.label-schema.build-date=$BUILD_DATE \
-	org.label-schema.description="Nginx image tweaked for running as a reverse proxy." \
-	org.label-schema.docker.cmd="docker run --detach garethflowers/nginx-proxy" \
-	org.label-schema.name="nginx-proxy" \
-	org.label-schema.schema-version="1.0" \
-	org.label-schema.url="http://nginx.org/" \
-	org.label-schema.vcs-ref=$VCS_REF \
-	org.label-schema.vcs-url="https://github.com/garethflowers/docker-nginx-proxy" \
-	org.label-schema.vendor="garethflowers" \
-	org.label-schema.version="0.0.2"
+LABEL org.opencontainers.image.authors="Gareth Flowers" \
+	org.opencontainers.image.description="Nginx Proxy Server" \
+	org.opencontainers.image.licenses="MIT" \
+	org.opencontainers.image.title="nginx-proxy" \
+	org.opencontainers.image.url="https://github.com/garethflowers/docker-nginx-proxy" \
+	org.opencontainers.image.vendor="garethflowers"
 
 EXPOSE 80
 EXPOSE 443
