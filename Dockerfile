@@ -1,7 +1,6 @@
 FROM nginx:1.18.0-alpine
 
-EXPOSE 80
-EXPOSE 443
+EXPOSE 80/tcp 443/tcp
 
 VOLUME [ "/etc/nginx/conf.d" ]
 VOLUME [ "/opt/ssl" ]
