@@ -1,12 +1,5 @@
 FROM nginx:1.18.0-alpine
 
-LABEL org.opencontainers.image.authors="Gareth Flowers" \
-	org.opencontainers.image.description="Nginx Proxy Server" \
-	org.opencontainers.image.licenses="MIT" \
-	org.opencontainers.image.title="nginx-proxy" \
-	org.opencontainers.image.url="https://github.com/garethflowers/docker-nginx-proxy" \
-	org.opencontainers.image.vendor="garethflowers"
-
 EXPOSE 80
 EXPOSE 443
 
