@@ -9,7 +9,9 @@ Docker based Nginx instance configured for use as a Reverse Proxy.
 To start a container use the following:
 ```sh
 docker run \
-	--name my-nginx-proxy \
+	--name some-nginx-proxy \
+	--publish 80 \
+	--publish 443 \
 	garethflowers/nginx-proxy
 ```
 
