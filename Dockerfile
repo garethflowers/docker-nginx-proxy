@@ -1,4 +1,4 @@
-FROM nginx:1.20.2-alpine
+FROM nginx:1.21.6-alpine
 
 EXPOSE 80/tcp 443/tcp
 
