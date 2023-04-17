@@ -1,0 +1,4 @@
+docker_repository: garethflowers/nginx-proxy
+plugins:
+  - jekyll-remote-theme
+remote_theme: garethflowers/jekyll-simple-theme
