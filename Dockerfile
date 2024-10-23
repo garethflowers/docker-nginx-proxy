@@ -1,6 +1,6 @@
 ARG NGINX_FROM_IMAGE=nginx:1.27.0-alpine
 
-FROM ${NGINX_FROM_IMAGE} as builder
+FROM ${NGINX_FROM_IMAGE} AS builder
 
 ARG ENABLED_MODULES="headers-more"
 
