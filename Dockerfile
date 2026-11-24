@@ -1,4 +1,4 @@
-ARG NGINX_FROM_IMAGE=nginx:1.27.0-alpine
+ARG NGINX_FROM_IMAGE=nginx:1.31.1-alpine
 
 FROM ${NGINX_FROM_IMAGE} AS builder
 
